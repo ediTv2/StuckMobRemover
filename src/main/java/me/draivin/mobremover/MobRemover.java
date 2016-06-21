@@ -15,7 +15,6 @@ public class MobRemover extends JavaPlugin {
         Bukkit.getServer().getScheduler().scheduleAsyncRepeatingTask(this, checker, 5, 400);
     }
 
-
     private class MobChecker implements Runnable {
 
         @Override
@@ -42,7 +41,7 @@ public class MobRemover extends JavaPlugin {
                     }
                 }
             }
-            
+
             getLogger().info("Check made in " + (System.currentTimeMillis() - start) + "ms.");
         }
 
