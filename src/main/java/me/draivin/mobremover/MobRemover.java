@@ -42,8 +42,7 @@ public class MobRemover extends JavaPlugin {
                     }
                 }
             }
-
-
+            
             getLogger().info("Check made in " + (System.currentTimeMillis() - start) + "ms.");
         }
 
