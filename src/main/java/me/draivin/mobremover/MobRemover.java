@@ -12,7 +12,7 @@ public class MobRemover extends JavaPlugin {
 
     public void onEnable() {
         MobChecker checker = new MobChecker();
-        Bukkit.getServer().getScheduler().scheduleAsyncRepeatingTask(this, checker, 5, 400);
+        Bukkit.getServer().getScheduler().runTaskTimerAsynchronously(this, checker, 5, 400);
     }
 
     private class MobChecker implements Runnable {
